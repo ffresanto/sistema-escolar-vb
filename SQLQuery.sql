@@ -26,3 +26,20 @@ insert into TBlogin values (
 '1234567'
 )
 
+create proc iniciarSessao(
+@Usuario varchar(30),
+@Senha varchar(50),
+@Msg varchar(100) output
+)
+as
+begin
+if(not exists(select * from TBlogin where 
+usuarioLogin=@Usuario and senhaLogin=@Senha)) 
+set
+@Msg='Dados incorretos'
+else 
+begin
+set @Msg='Bem vindo Sr(a): ' + @Usuario
+end
+end
+go
