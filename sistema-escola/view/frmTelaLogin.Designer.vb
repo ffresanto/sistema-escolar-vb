@@ -24,10 +24,10 @@ Partial Class frmTelaLogin
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmTelaLogin))
         Me.pnlBg = New System.Windows.Forms.Panel()
+        Me.btnFechar = New System.Windows.Forms.Label()
         Me.btnEntrar = New System.Windows.Forms.Button()
         Me.txtSenha = New System.Windows.Forms.TextBox()
         Me.txtEmail = New System.Windows.Forms.TextBox()
-        Me.btnFechar = New System.Windows.Forms.Label()
         Me.pnlBg.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -41,42 +41,10 @@ Partial Class frmTelaLogin
         Me.pnlBg.Controls.Add(Me.txtEmail)
         Me.pnlBg.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlBg.Location = New System.Drawing.Point(0, 0)
+        Me.pnlBg.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlBg.Name = "pnlBg"
-        Me.pnlBg.Size = New System.Drawing.Size(432, 683)
+        Me.pnlBg.Size = New System.Drawing.Size(324, 555)
         Me.pnlBg.TabIndex = 0
-        '
-        'btnEntrar
-        '
-        Me.btnEntrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.btnEntrar.FlatAppearance.BorderSize = 0
-        Me.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEntrar.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEntrar.ForeColor = System.Drawing.Color.White
-        Me.btnEntrar.Location = New System.Drawing.Point(16, 462)
-        Me.btnEntrar.Name = "btnEntrar"
-        Me.btnEntrar.Size = New System.Drawing.Size(402, 60)
-        Me.btnEntrar.TabIndex = 2
-        Me.btnEntrar.Text = "ENTRAR"
-        Me.btnEntrar.UseVisualStyleBackColor = False
-        '
-        'txtSenha
-        '
-        Me.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtSenha.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSenha.Location = New System.Drawing.Point(68, 399)
-        Me.txtSenha.Name = "txtSenha"
-        Me.txtSenha.Size = New System.Drawing.Size(332, 23)
-        Me.txtSenha.TabIndex = 1
-        Me.txtSenha.UseSystemPasswordChar = True
-        '
-        'txtEmail
-        '
-        Me.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtEmail.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.Location = New System.Drawing.Point(68, 319)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(332, 23)
-        Me.txtEmail.TabIndex = 0
         '
         'btnFechar
         '
@@ -85,19 +53,58 @@ Partial Class frmTelaLogin
         Me.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnFechar.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnFechar.ForeColor = System.Drawing.Color.White
-        Me.btnFechar.Location = New System.Drawing.Point(395, 9)
+        Me.btnFechar.Location = New System.Drawing.Point(296, 7)
+        Me.btnFechar.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.btnFechar.Name = "btnFechar"
-        Me.btnFechar.Size = New System.Drawing.Size(25, 28)
+        Me.btnFechar.Size = New System.Drawing.Size(20, 21)
         Me.btnFechar.TabIndex = 3
         Me.btnFechar.Text = "X"
         '
+        'btnEntrar
+        '
+        Me.btnEntrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(56, Byte), Integer))
+        Me.btnEntrar.FlatAppearance.BorderSize = 0
+        Me.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEntrar.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEntrar.ForeColor = System.Drawing.Color.White
+        Me.btnEntrar.Location = New System.Drawing.Point(12, 375)
+        Me.btnEntrar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnEntrar.Name = "btnEntrar"
+        Me.btnEntrar.Size = New System.Drawing.Size(302, 49)
+        Me.btnEntrar.TabIndex = 2
+        Me.btnEntrar.Text = "ENTRAR"
+        Me.btnEntrar.UseVisualStyleBackColor = False
+        '
+        'txtSenha
+        '
+        Me.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtSenha.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSenha.Location = New System.Drawing.Point(51, 324)
+        Me.txtSenha.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtSenha.Name = "txtSenha"
+        Me.txtSenha.Size = New System.Drawing.Size(249, 19)
+        Me.txtSenha.TabIndex = 1
+        Me.txtSenha.UseSystemPasswordChar = True
+        '
+        'txtEmail
+        '
+        Me.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtEmail.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmail.Location = New System.Drawing.Point(51, 259)
+        Me.txtEmail.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(249, 19)
+        Me.txtEmail.TabIndex = 0
+        '
         'frmTelaLogin
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(432, 683)
+        Me.ClientSize = New System.Drawing.Size(324, 555)
         Me.Controls.Add(Me.pnlBg)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmTelaLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Tela de Login"
