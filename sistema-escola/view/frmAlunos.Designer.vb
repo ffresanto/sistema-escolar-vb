@@ -151,7 +151,7 @@ Partial Class frmAlunos
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.Size = New System.Drawing.Size(678, 283)
-        Me.DataGridView1.TabIndex = 1
+        Me.DataGridView1.TabIndex = 28
         '
         'grpBuscarPor
         '
@@ -165,7 +165,7 @@ Partial Class frmAlunos
         Me.grpBuscarPor.Name = "grpBuscarPor"
         Me.grpBuscarPor.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.grpBuscarPor.Size = New System.Drawing.Size(678, 110)
-        Me.grpBuscarPor.TabIndex = 0
+        Me.grpBuscarPor.TabIndex = 30
         Me.grpBuscarPor.TabStop = False
         Me.grpBuscarPor.Text = "Buscar Por:"
         '
@@ -176,7 +176,7 @@ Partial Class frmAlunos
         Me.rdoNome.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.rdoNome.Name = "rdoNome"
         Me.rdoNome.Size = New System.Drawing.Size(75, 27)
-        Me.rdoNome.TabIndex = 2
+        Me.rdoNome.TabIndex = 21
         Me.rdoNome.TabStop = True
         Me.rdoNome.Text = "Nome"
         Me.rdoNome.UseVisualStyleBackColor = True
@@ -188,7 +188,7 @@ Partial Class frmAlunos
         Me.rdoCpf.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.rdoCpf.Name = "rdoCpf"
         Me.rdoCpf.Size = New System.Drawing.Size(57, 27)
-        Me.rdoCpf.TabIndex = 2
+        Me.rdoCpf.TabIndex = 20
         Me.rdoCpf.TabStop = True
         Me.rdoCpf.Text = "CPF"
         Me.rdoCpf.UseVisualStyleBackColor = True
@@ -254,7 +254,7 @@ Partial Class frmAlunos
         Me.btnFecharDados.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnFecharDados.Name = "btnFecharDados"
         Me.btnFecharDados.Size = New System.Drawing.Size(30, 32)
-        Me.btnFecharDados.TabIndex = 11
+        Me.btnFecharDados.TabIndex = 10
         Me.btnFecharDados.Text = "x"
         Me.btnFecharDados.UseVisualStyleBackColor = False
         '
@@ -270,7 +270,7 @@ Partial Class frmAlunos
         Me.btnEditar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(105, 42)
-        Me.btnEditar.TabIndex = 5
+        Me.btnEditar.TabIndex = 9
         Me.btnEditar.Text = "Editar"
         Me.btnEditar.UseVisualStyleBackColor = False
         '
@@ -286,7 +286,7 @@ Partial Class frmAlunos
         Me.btnSalvar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnSalvar.Name = "btnSalvar"
         Me.btnSalvar.Size = New System.Drawing.Size(105, 42)
-        Me.btnSalvar.TabIndex = 5
+        Me.btnSalvar.TabIndex = 8
         Me.btnSalvar.Text = "Salvar"
         Me.btnSalvar.UseVisualStyleBackColor = False
         '
@@ -296,7 +296,7 @@ Partial Class frmAlunos
         Me.txtEndereco.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtEndereco.Name = "txtEndereco"
         Me.txtEndereco.Size = New System.Drawing.Size(218, 29)
-        Me.txtEndereco.TabIndex = 10
+        Me.txtEndereco.TabIndex = 7
         '
         'lblEndereco
         '
@@ -325,7 +325,7 @@ Partial Class frmAlunos
         Me.dtpDataNascimento.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.dtpDataNascimento.Name = "dtpDataNascimento"
         Me.dtpDataNascimento.Size = New System.Drawing.Size(218, 29)
-        Me.dtpDataNascimento.TabIndex = 7
+        Me.dtpDataNascimento.TabIndex = 6
         Me.dtpDataNascimento.Value = New Date(2000, 1, 1, 22, 0, 0, 0)
         '
         'lblSexo
@@ -346,7 +346,7 @@ Partial Class frmAlunos
         Me.rdoFeminino.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.rdoFeminino.Name = "rdoFeminino"
         Me.rdoFeminino.Size = New System.Drawing.Size(98, 27)
-        Me.rdoFeminino.TabIndex = 3
+        Me.rdoFeminino.TabIndex = 26
         Me.rdoFeminino.TabStop = True
         Me.rdoFeminino.Text = "Feminino"
         Me.rdoFeminino.UseVisualStyleBackColor = False
@@ -358,7 +358,7 @@ Partial Class frmAlunos
         Me.rdoMasculino.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.rdoMasculino.Name = "rdoMasculino"
         Me.rdoMasculino.Size = New System.Drawing.Size(105, 27)
-        Me.rdoMasculino.TabIndex = 4
+        Me.rdoMasculino.TabIndex = 25
         Me.rdoMasculino.TabStop = True
         Me.rdoMasculino.Text = "Masculino"
         Me.rdoMasculino.UseVisualStyleBackColor = True
@@ -369,7 +369,7 @@ Partial Class frmAlunos
         Me.txtIdade.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtIdade.Name = "txtIdade"
         Me.txtIdade.Size = New System.Drawing.Size(45, 29)
-        Me.txtIdade.TabIndex = 5
+        Me.txtIdade.TabIndex = 23
         '
         'lblIdade
         '
@@ -387,7 +387,7 @@ Partial Class frmAlunos
         Me.txtSobrenome.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtSobrenome.Name = "txtSobrenome"
         Me.txtSobrenome.Size = New System.Drawing.Size(169, 29)
-        Me.txtSobrenome.TabIndex = 3
+        Me.txtSobrenome.TabIndex = 5
         '
         'lblSobrenome
         '
@@ -405,7 +405,7 @@ Partial Class frmAlunos
         Me.txtNome.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtNome.Name = "txtNome"
         Me.txtNome.Size = New System.Drawing.Size(218, 29)
-        Me.txtNome.TabIndex = 1
+        Me.txtNome.TabIndex = 4
         '
         'lblNome
         '
@@ -423,7 +423,7 @@ Partial Class frmAlunos
         Me.txtCpf.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtCpf.Name = "txtCpf"
         Me.txtCpf.Size = New System.Drawing.Size(218, 29)
-        Me.txtCpf.TabIndex = 1
+        Me.txtCpf.TabIndex = 3
         '
         'lblCpf
         '

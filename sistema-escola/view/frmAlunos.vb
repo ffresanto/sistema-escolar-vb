@@ -19,6 +19,7 @@ Public Class frmAlunos
     Private Sub frmAlunos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Width = 748
         dtpDataNascimento.Value = "01/01/2000"
+        Listar()
     End Sub
 
     Private Sub btnFecharDados_Click(sender As Object, e As EventArgs) Handles btnFecharDados.Click
@@ -47,7 +48,7 @@ Public Class frmAlunos
                 Dim mensagem As String = cmd.Parameters("@Mensagem").Value.ToString
                 MessageBox.Show(mensagem, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
 
-                'Listar()
+                Listar()
                 'Limpar()
 
                 Me.Width = 748
@@ -72,6 +73,24 @@ Public Class frmAlunos
         Else
             txtIdade.Text = Convert.ToString(idade)
         End If
+
+    End Sub
+
+    Private Sub Listar()
+        Dim dt As New DataTable
+        Dim da As SqlDataAdapter
+
+        Try
+            abrir()
+            da = New SqlDataAdapter("select * from TBaluno", conexao)
+            da.Fill(dt)
+            DataGridView1.DataSource = dt
+            Dim x As Integer = DataGridView1.Rows.Count
+            lblNumeroTotal.Text = CInt(x)
+        Catch ex As Exception
+            fechar()
+            MsgBox(ex.Message)
+        End Try
 
     End Sub
 End Class
