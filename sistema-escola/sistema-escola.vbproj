@@ -74,6 +74,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ModConexao.vb" />
+    <Compile Include="view\frmAlunos.Designer.vb">
+      <DependentUpon>frmAlunos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view\frmAlunos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="view\frmPrincipal.Designer.vb">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
     </Compile>
@@ -104,6 +110,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="view\frmAlunos.resx">
+      <DependentUpon>frmAlunos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
     </EmbeddedResource>
