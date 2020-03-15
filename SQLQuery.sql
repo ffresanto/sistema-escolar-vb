@@ -52,3 +52,25 @@ create table TBaluno(
 	data_nasc date,
 )
 go
+
+create proc registrarAluno
+	@Cpf varchar(20),
+	@Nome varchar(30),
+	@Sobrenome varchar(100),
+	@Idade tinyint,
+	@Sexo char(1),
+	@Endereco varchar(50),
+	@Data_nascimento date,
+	@Mensagem varchar(100) output
+as
+begin
+	if(exists(select * from TBaluno where cpf=@Cpf))
+	set @Mensagem='Número do CPF: ' + @Cpf + ' Já está registrado'
+	else
+	begin
+	insert into TBaluno values (@Cpf,@Nome,@Sobrenome,@Idade,@Sexo,@Endereco,@Data_nascimento)
+	set @Mensagem='Aluno registrado!'
+	end
+end
+go
+

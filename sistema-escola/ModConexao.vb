@@ -16,4 +16,6 @@ Module ModConexao
     End Sub
 
     Public modUsuario As String
+    Public codAluno As String
+
 End Module

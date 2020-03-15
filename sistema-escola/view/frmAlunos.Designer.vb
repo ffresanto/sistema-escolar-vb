@@ -36,24 +36,24 @@ Partial Class frmAlunos
         Me.txtCodigo = New System.Windows.Forms.TextBox()
         Me.lblCodigo = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.txtCpf = New System.Windows.Forms.TextBox()
-        Me.lblCpf = New System.Windows.Forms.Label()
-        Me.lblNome = New System.Windows.Forms.Label()
-        Me.txtNome = New System.Windows.Forms.TextBox()
-        Me.txtSobrenome = New System.Windows.Forms.TextBox()
-        Me.lblSobrenome = New System.Windows.Forms.Label()
-        Me.txtIdade = New System.Windows.Forms.TextBox()
-        Me.lblIdade = New System.Windows.Forms.Label()
-        Me.rdoFeminino = New System.Windows.Forms.RadioButton()
-        Me.rdoMasculino = New System.Windows.Forms.RadioButton()
-        Me.lblSexo = New System.Windows.Forms.Label()
-        Me.dtpDataNascimento = New System.Windows.Forms.DateTimePicker()
-        Me.lblDataNascimento = New System.Windows.Forms.Label()
+        Me.btnFecharDados = New System.Windows.Forms.Button()
+        Me.btnEditar = New System.Windows.Forms.Button()
+        Me.btnSalvar = New System.Windows.Forms.Button()
         Me.txtEndereco = New System.Windows.Forms.TextBox()
         Me.lblEndereco = New System.Windows.Forms.Label()
-        Me.btnSalvar = New System.Windows.Forms.Button()
-        Me.btnEditar = New System.Windows.Forms.Button()
-        Me.btnFecharDados = New System.Windows.Forms.Button()
+        Me.lblDataNascimento = New System.Windows.Forms.Label()
+        Me.dtpDataNascimento = New System.Windows.Forms.DateTimePicker()
+        Me.lblSexo = New System.Windows.Forms.Label()
+        Me.rdoFeminino = New System.Windows.Forms.RadioButton()
+        Me.rdoMasculino = New System.Windows.Forms.RadioButton()
+        Me.txtIdade = New System.Windows.Forms.TextBox()
+        Me.lblIdade = New System.Windows.Forms.Label()
+        Me.txtSobrenome = New System.Windows.Forms.TextBox()
+        Me.lblSobrenome = New System.Windows.Forms.Label()
+        Me.txtNome = New System.Windows.Forms.TextBox()
+        Me.lblNome = New System.Windows.Forms.Label()
+        Me.txtCpf = New System.Windows.Forms.TextBox()
+        Me.lblCpf = New System.Windows.Forms.Label()
         Me.pnlTitulo.SuspendLayout()
         Me.pnlPainel.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -238,73 +238,97 @@ Partial Class frmAlunos
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Dados Pessoais:"
         '
-        'txtCpf
+        'btnFecharDados
         '
-        Me.txtCpf.Location = New System.Drawing.Point(11, 78)
-        Me.txtCpf.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtCpf.Name = "txtCpf"
-        Me.txtCpf.Size = New System.Drawing.Size(289, 35)
-        Me.txtCpf.TabIndex = 1
+        Me.btnFecharDados.BackColor = System.Drawing.Color.Red
+        Me.btnFecharDados.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnFecharDados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(126, Byte), Integer))
+        Me.btnFecharDados.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnFecharDados.Font = New System.Drawing.Font("Segoe UI", 12.2!)
+        Me.btnFecharDados.ForeColor = System.Drawing.Color.White
+        Me.btnFecharDados.Location = New System.Drawing.Point(279, 0)
+        Me.btnFecharDados.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnFecharDados.Name = "btnFecharDados"
+        Me.btnFecharDados.Size = New System.Drawing.Size(40, 40)
+        Me.btnFecharDados.TabIndex = 11
+        Me.btnFecharDados.Text = "x"
+        Me.btnFecharDados.UseVisualStyleBackColor = False
         '
-        'lblCpf
+        'btnEditar
         '
-        Me.lblCpf.AutoSize = True
-        Me.lblCpf.Location = New System.Drawing.Point(6, 46)
-        Me.lblCpf.Name = "lblCpf"
-        Me.lblCpf.Size = New System.Drawing.Size(53, 30)
-        Me.lblCpf.TabIndex = 0
-        Me.lblCpf.Text = "CPF:"
+        Me.btnEditar.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(91, Byte), Integer), CType(CType(157, Byte), Integer))
+        Me.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(126, Byte), Integer))
+        Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEditar.Font = New System.Drawing.Font("Segoe UI", 12.2!)
+        Me.btnEditar.ForeColor = System.Drawing.Color.White
+        Me.btnEditar.Location = New System.Drawing.Point(160, 524)
+        Me.btnEditar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnEditar.Name = "btnEditar"
+        Me.btnEditar.Size = New System.Drawing.Size(140, 52)
+        Me.btnEditar.TabIndex = 5
+        Me.btnEditar.Text = "Editar"
+        Me.btnEditar.UseVisualStyleBackColor = False
         '
-        'lblNome
+        'btnSalvar
         '
-        Me.lblNome.AutoSize = True
-        Me.lblNome.Location = New System.Drawing.Point(6, 116)
-        Me.lblNome.Name = "lblNome"
-        Me.lblNome.Size = New System.Drawing.Size(75, 30)
-        Me.lblNome.TabIndex = 0
-        Me.lblNome.Text = "Nome:"
+        Me.btnSalvar.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(91, Byte), Integer), CType(CType(157, Byte), Integer))
+        Me.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSalvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(126, Byte), Integer))
+        Me.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSalvar.Font = New System.Drawing.Font("Segoe UI", 12.2!)
+        Me.btnSalvar.ForeColor = System.Drawing.Color.White
+        Me.btnSalvar.Location = New System.Drawing.Point(11, 524)
+        Me.btnSalvar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnSalvar.Name = "btnSalvar"
+        Me.btnSalvar.Size = New System.Drawing.Size(140, 52)
+        Me.btnSalvar.TabIndex = 5
+        Me.btnSalvar.Text = "Salvar"
+        Me.btnSalvar.UseVisualStyleBackColor = False
         '
-        'txtNome
+        'txtEndereco
         '
-        Me.txtNome.Location = New System.Drawing.Point(11, 148)
-        Me.txtNome.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtNome.Name = "txtNome"
-        Me.txtNome.Size = New System.Drawing.Size(289, 35)
-        Me.txtNome.TabIndex = 1
+        Me.txtEndereco.Location = New System.Drawing.Point(11, 464)
+        Me.txtEndereco.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtEndereco.Name = "txtEndereco"
+        Me.txtEndereco.Size = New System.Drawing.Size(289, 35)
+        Me.txtEndereco.TabIndex = 10
         '
-        'txtSobrenome
+        'lblEndereco
         '
-        Me.txtSobrenome.Location = New System.Drawing.Point(11, 218)
-        Me.txtSobrenome.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtSobrenome.Name = "txtSobrenome"
-        Me.txtSobrenome.Size = New System.Drawing.Size(224, 35)
-        Me.txtSobrenome.TabIndex = 3
+        Me.lblEndereco.AutoSize = True
+        Me.lblEndereco.Location = New System.Drawing.Point(6, 432)
+        Me.lblEndereco.Name = "lblEndereco"
+        Me.lblEndereco.Size = New System.Drawing.Size(104, 30)
+        Me.lblEndereco.TabIndex = 9
+        Me.lblEndereco.Text = "Endereço:"
         '
-        'lblSobrenome
+        'lblDataNascimento
         '
-        Me.lblSobrenome.AutoSize = True
-        Me.lblSobrenome.Location = New System.Drawing.Point(6, 186)
-        Me.lblSobrenome.Name = "lblSobrenome"
-        Me.lblSobrenome.Size = New System.Drawing.Size(124, 30)
-        Me.lblSobrenome.TabIndex = 2
-        Me.lblSobrenome.Text = "Sobrenome:"
+        Me.lblDataNascimento.AutoSize = True
+        Me.lblDataNascimento.Location = New System.Drawing.Point(6, 361)
+        Me.lblDataNascimento.Name = "lblDataNascimento"
+        Me.lblDataNascimento.Size = New System.Drawing.Size(208, 30)
+        Me.lblDataNascimento.TabIndex = 8
+        Me.lblDataNascimento.Text = "Data de Nascimento:"
         '
-        'txtIdade
+        'dtpDataNascimento
         '
-        Me.txtIdade.Location = New System.Drawing.Point(241, 218)
-        Me.txtIdade.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtIdade.Name = "txtIdade"
-        Me.txtIdade.Size = New System.Drawing.Size(59, 35)
-        Me.txtIdade.TabIndex = 5
+        Me.dtpDataNascimento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpDataNascimento.Location = New System.Drawing.Point(11, 394)
+        Me.dtpDataNascimento.Name = "dtpDataNascimento"
+        Me.dtpDataNascimento.Size = New System.Drawing.Size(289, 35)
+        Me.dtpDataNascimento.TabIndex = 7
+        Me.dtpDataNascimento.Value = New Date(2000, 1, 1, 22, 0, 0, 0)
         '
-        'lblIdade
+        'lblSexo
         '
-        Me.lblIdade.AutoSize = True
-        Me.lblIdade.Location = New System.Drawing.Point(236, 186)
-        Me.lblIdade.Name = "lblIdade"
-        Me.lblIdade.Size = New System.Drawing.Size(70, 30)
-        Me.lblIdade.TabIndex = 4
-        Me.lblIdade.Text = "Idade:"
+        Me.lblSexo.AutoSize = True
+        Me.lblSexo.Location = New System.Drawing.Point(6, 255)
+        Me.lblSexo.Name = "lblSexo"
+        Me.lblSexo.Size = New System.Drawing.Size(62, 30)
+        Me.lblSexo.TabIndex = 6
+        Me.lblSexo.Text = "Sexo:"
         '
         'rdoFeminino
         '
@@ -331,97 +355,73 @@ Partial Class frmAlunos
         Me.rdoMasculino.Text = "Masculino"
         Me.rdoMasculino.UseVisualStyleBackColor = True
         '
-        'lblSexo
+        'txtIdade
         '
-        Me.lblSexo.AutoSize = True
-        Me.lblSexo.Location = New System.Drawing.Point(6, 255)
-        Me.lblSexo.Name = "lblSexo"
-        Me.lblSexo.Size = New System.Drawing.Size(62, 30)
-        Me.lblSexo.TabIndex = 6
-        Me.lblSexo.Text = "Sexo:"
+        Me.txtIdade.Location = New System.Drawing.Point(241, 218)
+        Me.txtIdade.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtIdade.Name = "txtIdade"
+        Me.txtIdade.Size = New System.Drawing.Size(59, 35)
+        Me.txtIdade.TabIndex = 5
         '
-        'dtpDataNascimento
+        'lblIdade
         '
-        Me.dtpDataNascimento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpDataNascimento.Location = New System.Drawing.Point(11, 394)
-        Me.dtpDataNascimento.Name = "dtpDataNascimento"
-        Me.dtpDataNascimento.Size = New System.Drawing.Size(289, 35)
-        Me.dtpDataNascimento.TabIndex = 7
-        Me.dtpDataNascimento.Value = New Date(2000, 1, 1, 22, 0, 0, 0)
+        Me.lblIdade.AutoSize = True
+        Me.lblIdade.Location = New System.Drawing.Point(236, 186)
+        Me.lblIdade.Name = "lblIdade"
+        Me.lblIdade.Size = New System.Drawing.Size(70, 30)
+        Me.lblIdade.TabIndex = 4
+        Me.lblIdade.Text = "Idade:"
         '
-        'lblDataNascimento
+        'txtSobrenome
         '
-        Me.lblDataNascimento.AutoSize = True
-        Me.lblDataNascimento.Location = New System.Drawing.Point(6, 361)
-        Me.lblDataNascimento.Name = "lblDataNascimento"
-        Me.lblDataNascimento.Size = New System.Drawing.Size(208, 30)
-        Me.lblDataNascimento.TabIndex = 8
-        Me.lblDataNascimento.Text = "Data de Nascimento:"
+        Me.txtSobrenome.Location = New System.Drawing.Point(11, 218)
+        Me.txtSobrenome.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtSobrenome.Name = "txtSobrenome"
+        Me.txtSobrenome.Size = New System.Drawing.Size(224, 35)
+        Me.txtSobrenome.TabIndex = 3
         '
-        'txtEndereco
+        'lblSobrenome
         '
-        Me.txtEndereco.Location = New System.Drawing.Point(11, 464)
-        Me.txtEndereco.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtEndereco.Name = "txtEndereco"
-        Me.txtEndereco.Size = New System.Drawing.Size(289, 35)
-        Me.txtEndereco.TabIndex = 10
+        Me.lblSobrenome.AutoSize = True
+        Me.lblSobrenome.Location = New System.Drawing.Point(6, 186)
+        Me.lblSobrenome.Name = "lblSobrenome"
+        Me.lblSobrenome.Size = New System.Drawing.Size(124, 30)
+        Me.lblSobrenome.TabIndex = 2
+        Me.lblSobrenome.Text = "Sobrenome:"
         '
-        'lblEndereco
+        'txtNome
         '
-        Me.lblEndereco.AutoSize = True
-        Me.lblEndereco.Location = New System.Drawing.Point(6, 432)
-        Me.lblEndereco.Name = "lblEndereco"
-        Me.lblEndereco.Size = New System.Drawing.Size(104, 30)
-        Me.lblEndereco.TabIndex = 9
-        Me.lblEndereco.Text = "Endereço:"
+        Me.txtNome.Location = New System.Drawing.Point(11, 148)
+        Me.txtNome.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtNome.Name = "txtNome"
+        Me.txtNome.Size = New System.Drawing.Size(289, 35)
+        Me.txtNome.TabIndex = 1
         '
-        'btnSalvar
+        'lblNome
         '
-        Me.btnSalvar.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(91, Byte), Integer), CType(CType(157, Byte), Integer))
-        Me.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnSalvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(126, Byte), Integer))
-        Me.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSalvar.Font = New System.Drawing.Font("Segoe UI", 12.2!)
-        Me.btnSalvar.ForeColor = System.Drawing.Color.White
-        Me.btnSalvar.Location = New System.Drawing.Point(11, 524)
-        Me.btnSalvar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnSalvar.Name = "btnSalvar"
-        Me.btnSalvar.Size = New System.Drawing.Size(140, 52)
-        Me.btnSalvar.TabIndex = 5
-        Me.btnSalvar.Text = "Salvar"
-        Me.btnSalvar.UseVisualStyleBackColor = False
+        Me.lblNome.AutoSize = True
+        Me.lblNome.Location = New System.Drawing.Point(6, 116)
+        Me.lblNome.Name = "lblNome"
+        Me.lblNome.Size = New System.Drawing.Size(75, 30)
+        Me.lblNome.TabIndex = 0
+        Me.lblNome.Text = "Nome:"
         '
-        'btnEditar
+        'txtCpf
         '
-        Me.btnEditar.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(91, Byte), Integer), CType(CType(157, Byte), Integer))
-        Me.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(126, Byte), Integer))
-        Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEditar.Font = New System.Drawing.Font("Segoe UI", 12.2!)
-        Me.btnEditar.ForeColor = System.Drawing.Color.White
-        Me.btnEditar.Location = New System.Drawing.Point(160, 524)
-        Me.btnEditar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnEditar.Name = "btnEditar"
-        Me.btnEditar.Size = New System.Drawing.Size(140, 52)
-        Me.btnEditar.TabIndex = 5
-        Me.btnEditar.Text = "Editar"
-        Me.btnEditar.UseVisualStyleBackColor = False
+        Me.txtCpf.Location = New System.Drawing.Point(11, 78)
+        Me.txtCpf.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtCpf.Name = "txtCpf"
+        Me.txtCpf.Size = New System.Drawing.Size(289, 35)
+        Me.txtCpf.TabIndex = 1
         '
-        'btnFecharDados
+        'lblCpf
         '
-        Me.btnFecharDados.BackColor = System.Drawing.Color.Red
-        Me.btnFecharDados.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnFecharDados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(78, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(126, Byte), Integer))
-        Me.btnFecharDados.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnFecharDados.Font = New System.Drawing.Font("Segoe UI", 12.2!)
-        Me.btnFecharDados.ForeColor = System.Drawing.Color.White
-        Me.btnFecharDados.Location = New System.Drawing.Point(279, 0)
-        Me.btnFecharDados.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnFecharDados.Name = "btnFecharDados"
-        Me.btnFecharDados.Size = New System.Drawing.Size(40, 40)
-        Me.btnFecharDados.TabIndex = 11
-        Me.btnFecharDados.Text = "x"
-        Me.btnFecharDados.UseVisualStyleBackColor = False
+        Me.lblCpf.AutoSize = True
+        Me.lblCpf.Location = New System.Drawing.Point(6, 46)
+        Me.lblCpf.Name = "lblCpf"
+        Me.lblCpf.Size = New System.Drawing.Size(53, 30)
+        Me.lblCpf.TabIndex = 0
+        Me.lblCpf.Text = "CPF:"
         '
         'frmAlunos
         '
