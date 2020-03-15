@@ -18,6 +18,7 @@ Public Class frmAlunos
 
     Private Sub frmAlunos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Width = 748
+        dtpDataNascimento.Value = "01/01/2000"
     End Sub
 
     Private Sub btnFecharDados_Click(sender As Object, e As EventArgs) Handles btnFecharDados.Click
@@ -55,5 +56,22 @@ Public Class frmAlunos
                 MessageBox.Show(ex.Message)
             End Try
         End If
+    End Sub
+
+    Private Sub dtpDataNascimento_ValueChanged(sender As Object, e As EventArgs) Handles dtpDataNascimento.ValueChanged
+        Dim dataNasc As Date
+        Dim idade As Integer
+
+        dataNasc = dtpDataNascimento.Value
+        idade = Now.Year - dataNasc.Year
+
+        If dataNasc >= "01/01/2020 " Then
+            MsgBox("Idade não permitida para matricula")
+            txtIdade.Clear()
+            dtpDataNascimento.Value = "01/01/2000"
+        Else
+            txtIdade.Text = Convert.ToString(idade)
+        End If
+
     End Sub
 End Class
