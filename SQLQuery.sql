@@ -41,3 +41,14 @@ begin
 	end
 end
 go
+
+create table TBaluno(
+	cpf varchar(20) primary key,
+	nome varchar(30) not null,
+	sobrenome varchar(30),
+	idade TINYINT,
+	sexo char(1) not null check(sexo in ('M', 'F')),
+	endereco varchar(100),
+	data_nasc date,
+)
+go
