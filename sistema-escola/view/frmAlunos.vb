@@ -49,7 +49,7 @@ Public Class frmAlunos
                 MessageBox.Show(mensagem, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
 
                 Listar()
-                'Limpar()
+                Limpar()
 
                 Me.Width = 748
 
@@ -92,5 +92,38 @@ Public Class frmAlunos
             MsgBox(ex.Message)
         End Try
 
+    End Sub
+
+    Private Sub Limpar()
+        txtCodigo.Clear()
+        txtCpf.Clear()
+        txtEndereco.Clear()
+        txtIdade.Clear()
+        txtNome.Clear()
+        txtSobrenome.Clear()
+        rdoMasculino.Checked = True
+        dtpDataNascimento.Value = "01/01/2000"
+        txtCpf.Focus()
+    End Sub
+
+    Private Sub txtCodigo_TextChanged(sender As Object, e As EventArgs) Handles txtCodigo.TextChanged
+        Dim dt As New DataTable
+        Dim da As New SqlDataAdapter
+
+        Try
+            abrir()
+
+            da = New SqlDataAdapter("BuscarCPFAluno", conexao)
+            da.SelectCommand.CommandType = CommandType.StoredProcedure
+            da.SelectCommand.Parameters.AddWithValue("@Cpf", txtCodigo.Text)
+            da.Fill(dt)
+            DataGridView1.DataSource = dt
+            Dim x As Integer = DataGridView1.Rows.Count
+            lblNumeroTotal.Text = CInt(x)
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Close()
+        End Try
     End Sub
 End Class

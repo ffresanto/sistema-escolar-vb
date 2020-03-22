@@ -74,3 +74,20 @@ begin
 end
 go
 
+create proc BuscarCPFAluno
+	@Cpf varchar(20)
+as
+begin
+	select * from TBaluno
+	where cpf like @Cpf+'%' 
+end
+go
+
+create proc BuscarNomeAluno
+	@Nome varchar(60)
+as
+begin
+	select * from TBaluno
+	where nome like @Nome+'%' 
+end
+go
