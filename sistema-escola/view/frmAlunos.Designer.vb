@@ -22,6 +22,8 @@ Partial Class frmAlunos
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAlunos))
         Me.pnlTitulo = New System.Windows.Forms.Panel()
         Me.lblTitulo = New System.Windows.Forms.Label()
@@ -141,13 +143,30 @@ Partial Class frmAlunos
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(24, 175)
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.2!)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle2
+        Me.DataGridView1.Location = New System.Drawing.Point(24, 148)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(904, 348)
+        Me.DataGridView1.Size = New System.Drawing.Size(904, 375)
         Me.DataGridView1.TabIndex = 28
         '
         'grpBuscarPor
@@ -161,7 +180,7 @@ Partial Class frmAlunos
         Me.grpBuscarPor.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.grpBuscarPor.Name = "grpBuscarPor"
         Me.grpBuscarPor.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.grpBuscarPor.Size = New System.Drawing.Size(904, 135)
+        Me.grpBuscarPor.Size = New System.Drawing.Size(904, 109)
         Me.grpBuscarPor.TabIndex = 30
         Me.grpBuscarPor.TabStop = False
         Me.grpBuscarPor.Text = "Buscar Por:"
@@ -169,7 +188,7 @@ Partial Class frmAlunos
         'rdoNome
         '
         Me.rdoNome.AutoSize = True
-        Me.rdoNome.Location = New System.Drawing.Point(96, 42)
+        Me.rdoNome.Location = New System.Drawing.Point(107, 54)
         Me.rdoNome.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rdoNome.Name = "rdoNome"
         Me.rdoNome.Size = New System.Drawing.Size(91, 34)
@@ -181,7 +200,7 @@ Partial Class frmAlunos
         'rdoCpf
         '
         Me.rdoCpf.AutoSize = True
-        Me.rdoCpf.Location = New System.Drawing.Point(11, 42)
+        Me.rdoCpf.Location = New System.Drawing.Point(16, 54)
         Me.rdoCpf.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rdoCpf.Name = "rdoCpf"
         Me.rdoCpf.Size = New System.Drawing.Size(69, 34)
@@ -192,20 +211,21 @@ Partial Class frmAlunos
         '
         'txtCodigo
         '
-        Me.txtCodigo.Location = New System.Drawing.Point(96, 85)
+        Me.txtCodigo.Enabled = False
+        Me.txtCodigo.Location = New System.Drawing.Point(220, 54)
         Me.txtCodigo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtCodigo.Name = "txtCodigo"
-        Me.txtCodigo.Size = New System.Drawing.Size(220, 35)
+        Me.txtCodigo.Size = New System.Drawing.Size(661, 35)
         Me.txtCodigo.TabIndex = 1
         '
         'lblCodigo
         '
         Me.lblCodigo.AutoSize = True
-        Me.lblCodigo.Location = New System.Drawing.Point(5, 89)
+        Me.lblCodigo.Location = New System.Drawing.Point(215, 21)
         Me.lblCodigo.Name = "lblCodigo"
-        Me.lblCodigo.Size = New System.Drawing.Size(84, 30)
+        Me.lblCodigo.Size = New System.Drawing.Size(79, 30)
         Me.lblCodigo.TabIndex = 0
-        Me.lblCodigo.Text = "Código:"
+        Me.lblCodigo.Text = "Buscar:"
         '
         'GroupBox1
         '

@@ -91,3 +91,21 @@ begin
 	where nome like @Nome+'%' 
 end
 go
+
+create proc EditarAluno
+	@Cpf varchar(20),
+	@Nome varchar(30),
+	@Sobrenome varchar(100),
+	@Idade tinyint,
+	@Sexo char(1),
+	@Endereco varchar(50),
+	@Data_nascimento date,
+	@Mensagem varchar(100) output
+as
+begin
+	update TBaluno set nome=@Nome, sobrenome=@Sobrenome, idade=@Idade, sexo=@Sexo, endereco=@Endereco, data_nasc=@Data_nascimento
+	where cpf=@cpf
+	set @Mensagem='Dados registrado!'
+
+end
+go
